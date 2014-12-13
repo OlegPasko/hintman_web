@@ -58,3 +58,15 @@ Success:
       ]
     }
   }
+
+=== Vote for hints
+
+POST /api/v1/hints/1/vote.json
+
+parameters:
+
+- auth_token
+
+- user_id
+
+- value (up/down values)

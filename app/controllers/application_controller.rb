@@ -15,4 +15,12 @@ class ApplicationController < ActionController::Base
     headers['Access-Control-Request-Method'] = '*'
     headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
   end
+
+  def check_token
+    unless User.find_by_auth_token(params[:auth_token])
+      respond_to do |format|
+        format.json { render json: {errors: ['Authorization failed.'] }, status: 422 }
+      end
+    end
+  end
 end

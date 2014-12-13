@@ -13,7 +13,7 @@ class Api::V1::GroupsController < ApplicationController
                Group.all.where('name ILIKE ?', "#{params[:q]}%").limit(limit)
              else
                Group.all.limit(limit)
-            end
+             end
 
     respond_to do |format|
       format.json { render json: { 'groups' => groups }, except: [:created_at, :updated_at] }

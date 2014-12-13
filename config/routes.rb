@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       resources :groups, only: [:index, :show]
       resources :hints, only: [:show]
       resources :users, only: [:create]
+      post 'hints/:id/vote' => 'hints#vote'
     end
   end
 
