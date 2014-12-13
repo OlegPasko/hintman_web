@@ -15,9 +15,9 @@ class Api::V1::HintsController < ApplicationController
             end
 
     vote_value = if voted
-                   UserVote.where(user_id: params[:user_id].to_i, hint: hint).first.positive
+                   UserVote.where(user_id: params[:user_id].to_i, hint: hint).first.positive ? 'up' : 'down'
                  else
-                   nil
+                   false
                  end
     # , expired: expired, voted: voted, vote_value: vote_value
     # hint['expired'] = 'trololo'
@@ -32,8 +32,19 @@ class Api::V1::HintsController < ApplicationController
       hint = Hint.find(params[:id])
       user_vote = UserVote.new(user_id: params[:user_id], positive: positive, hint: hint)
       if user_vote.save
+
+        expired = hint.created_at < Time.now-1.day ? true : false
+
+        voted = UserVote.where(user_id: params[:user_id].to_i, hint: hint).any? ? true : false
+
+        vote_value = if voted
+                       UserVote.where(user_id: params[:user_id].to_i, hint: hint).first.positive ? 'up' : 'down'
+                     else
+                       false
+                     end
+
         respond_to do |format|
-          format.json { render json: hint, include: { group: { only: [:name] } } }
+          format.json { render json: hint.as_json(include: { group: { only: [:name] } }).merge(expired: expired, voted: voted, vote_value: vote_value) }
         end
       else
         respond_to do |format|
