@@ -2,5 +2,18 @@
 
 Server: http://hintman.herokuapp.com
 
+=== Groups
+
 GET /api/v1/groups.json
+
+parameters:
+
+- limit (integer), optional
+
+=== Group details
+
 GET /api/v1/groups/1.json
+
+=== Hint details
+
+GET /api/v1/hints/1.json
