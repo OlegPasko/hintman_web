@@ -32,7 +32,9 @@ parameters:
 
 - group_id
 
-Errors response example: {"errors":["Group can't be blank"]}, 422 status
+Errors response example:
+
+  {"errors":["Group can't be blank"]}, 422 status
 
 Success:
 
