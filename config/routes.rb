@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :groups, only: [:index, :show]
       resources :hints, only: [:show]
+      resources :users, only: [:create]
     end
   end
 
