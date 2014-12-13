@@ -6,7 +6,7 @@ class Api::V1::GroupsController < ApplicationController
     groups = Group.all
 
     respond_to do |format|
-      format.json { render json: groups }
+      format.json { render json: { 'groups' => groups } }
     end
   end
 end
