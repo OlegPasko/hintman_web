@@ -10,6 +10,10 @@ parameters:
 
 - limit (integer), optional
 
+- q (string), optional, case insensitive, search from beggining with letter
+
+Example: http://localhost:3000/api/v1/groups.json?limit=5&q=bl
+
 === Group details
 
 GET /api/v1/groups/1.json
