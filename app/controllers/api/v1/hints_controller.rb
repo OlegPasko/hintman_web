@@ -19,8 +19,6 @@ class Api::V1::HintsController < ApplicationController
                  else
                    false
                  end
-    # , expired: expired, voted: voted, vote_value: vote_value
-    # hint['expired'] = 'trololo'
     respond_to do |format|
       format.json { render json: hint.as_json(include: { group: { only: [:name] } }).merge(expired: expired, voted: voted, vote_value: vote_value) }
     end

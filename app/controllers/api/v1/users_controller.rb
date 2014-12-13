@@ -25,9 +25,7 @@ class Api::V1::UsersController < ApplicationController
     respond_to do |format|
       format.json { render json: user, only: [:id, :group_id, :auth_token, :device_id], include: {
                                          group: {
-                                             only: [:id, :name], include: {
-                                                 hints: {}
-                                             }
+                                             only: [:id, :name], methods: :active_hints
                                          }
                                      }}
     end
