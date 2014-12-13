@@ -1,3 +1,6 @@
 == API
 
+Server: http://hintman.herokuapp.com
+
 GET /api/v1/groups.json
+GET /api/v1/groups/1.json
