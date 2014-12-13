@@ -12,7 +12,7 @@ parameters:
 
 - q (string), optional, case insensitive, search from beggining with letter
 
-Example: http://localhost:3000/api/v1/groups.json?limit=5&q=bl
+Example: http://hintman.herokuapp.com/api/v1/groups.json?limit=3&q=4
 
 === Group details
 
