@@ -65,7 +65,7 @@ Success:
     "group": {
       "id": 1,
       "name": "46888random_name",
-      "hints": [
+      "active_hints": [
         {
           "group_id": 1,
           "id": 1,
