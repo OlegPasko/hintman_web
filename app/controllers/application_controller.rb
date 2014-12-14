@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :null_session
 
   def root
-    render text: 'hello', layout: true
+    render text: '', layout: true
   end
 
   private
