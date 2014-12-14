@@ -1,0 +1,242 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+/* line 18, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 18, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+body {
+  line-height: 1;
+}
+
+/* line 18, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 18, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 18, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+/* line 18, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 20, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+body {
+  background-color: #074343;
+}
+
+/* line 24, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+#header {
+  background-image: url(/assets/top_bg-c6b4ec28dc98792e84c7287b093e832f.png);
+  height: 162px;
+}
+/* line 27, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+#header #logo {
+  float: left;
+  padding: 20px 0;
+  width: 403px;
+  height: 121px;
+  background-image: url(/assets/logo@2x-a7e9e993a37691d19b05bce59d257243.png);
+  background-size: 403px 121px;
+  background-position: 0 20px;
+  background-repeat: no-repeat;
+}
+/* line 37, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+#header #play-icon {
+  float: right;
+  padding: 50px 0 0;
+  width: 214px;
+  height: 71px;
+  background-image: url(/assets/play@2x-a8e33608b39db02f3347d9aaaef2f803.png);
+  background-size: 214px 71px;
+  background-position: 0 50px;
+  background-repeat: no-repeat;
+}
+
+/* line 48, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 391px) and (max-device-width: 960px) {
+  /* line 55, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  #header {
+    height: 100px;
+    padding: 0 20px;
+  }
+  /* line 58, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  #header #logo {
+    width: 201px;
+    height: 60px;
+    background-size: 201px 60px;
+  }
+  /* line 63, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  #header #play-icon {
+    width: 138px;
+    height: 45px;
+    background-size: 138px 45px;
+    padding: 30px 0 0;
+    background-position: 0 30px;
+  }
+
+  /* line 71, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  .content {
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 1px) and (max-device-width: 390px) {
+  /* line 78, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  #header {
+    height: 50px;
+    padding: 0 20px;
+  }
+  /* line 81, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  #header #logo {
+    padding: 10px 0;
+    width: 100px;
+    height: 30px;
+    background-size: 100px 30px;
+    background-position: 0 10px;
+  }
+  /* line 88, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  #header #play-icon {
+    width: 107px;
+    height: 35px;
+    background-size: 107px 35px;
+    padding: 7px 0 0;
+    background-position: 0 7px;
+  }
+
+  /* line 96, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+  .content {
+    width: 100%;
+  }
+}
+/* line 101, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+a {
+  color: #ffffff;
+}
+
+/* line 105, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+#info {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  font-family: Monospace;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+/* line 117, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+#menu {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 124, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+.element {
+  width: 620px;
+  height: 160px;
+  box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+  border: 1px solid rgba(127, 255, 255, 0.25);
+  text-align: center;
+  cursor: default;
+}
+
+/* line 133, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+.element:hover {
+  box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.75);
+  border: 1px solid rgba(127, 255, 255, 0.75);
+}
+
+/* line 138, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+.element .number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 12px;
+  color: rgba(127, 255, 255, 0.75);
+}
+
+/* line 146, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+.element .symbol {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}
+
+/* line 157, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+.element .details {
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  right: 0px;
+  font-size: 22px;
+  color: rgba(127, 255, 255, 0.75);
+}
+
+/* line 166, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+button {
+  color: rgba(127, 255, 255, 0.75);
+  background: transparent;
+  outline: 1px solid rgba(127, 255, 255, 0.75);
+  border: 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* line 174, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+button:hover {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+/* line 177, /Users/olegpasko/sites/hintman_web/app/assets/stylesheets/application.css.scss */
+button:active {
+  color: #000000;
+  background-color: rgba(0, 255, 255, 0.75);
+}
