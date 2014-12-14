@@ -4,7 +4,7 @@ class Api::V1::HintsController < ApplicationController
   before_action :check_token, only: [:vote, :create]
 
   def index
-    hints = Hint.all.limit(30).shuffle
+    hints = Hint.all.limit(35).shuffle
     respond_to do |format|
       format.json { render json: hints, include: {group: {}} }
     end
