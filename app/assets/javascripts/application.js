@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular
-//= require_tree ./angular
+//= require three.min
+//= require tween.min
+//= require TrackballControls
+//= require CSS3DRenderer

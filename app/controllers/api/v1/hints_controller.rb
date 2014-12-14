@@ -3,6 +3,13 @@ class Api::V1::HintsController < ApplicationController
   before_action :set_access_control_headers
   before_action :check_token, only: [:vote, :create]
 
+  def index
+    hints = Hint.all.limit(20).shuffle
+    respond_to do |format|
+      format.json { render json: hints, include: {group: {}} }
+    end
+  end
+
   def show
     hint = Hint.find(params[:id])
 
